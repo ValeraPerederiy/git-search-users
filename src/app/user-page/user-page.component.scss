@@ -1,0 +1,30 @@
+.content-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 20px;
+    padding-top: 0;
+}
+
+.content-wrapper {
+    margin-top: 30px;
+
+    .user-repos {
+        align-items: center;
+        margin-bottom: 20px;
+        border: 2px solid #333;
+        padding: 10px 0;
+        cursor: pointer;
+        .counter{
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+        .repos-name {
+            .name {
+                font-weight: 600;
+                font-size: 1.3rem;
+            }
+        }
+
+
+    }
+}

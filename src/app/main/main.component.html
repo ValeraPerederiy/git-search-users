@@ -1,0 +1,26 @@
+<div class="content-container">
+    <div class="input-wrapper row">
+        <p *ngIf="errorSearchResponce" style="color: red;">{{errorMessage}}</p>
+        <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Username" 
+            aria-label="Username" 
+            [formControl]="searchUser"
+            (input)="serachUserByUsername()"
+            [ngClass]="{'is-invalid':errorSearchResponce}"
+            >
+    </div>
+    <div class="content-wrapper">
+        <div class="user-info row" *ngFor="let user of usersList" [routerLink]="['/repos', user.login]">
+            <div class="user-avatar col-6">
+                <img [src]="user.avatar_url" alt="">
+            </div>
+            <div class="user-login col-6">
+                <span class="login">{{user.login}}</span>
+            </div>
+        </div>
+
+
+    </div>
+</div>

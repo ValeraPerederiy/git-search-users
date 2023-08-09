@@ -1,0 +1,33 @@
+.content-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+
+.content-wrapper {
+    margin-top: 30px;
+
+    .user-info {
+        align-items: center;
+        margin-bottom: 20px;
+        
+        padding: 10px 0;
+        cursor: pointer;
+
+       
+        .user-avatar img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .user-login {
+
+            .login {
+                font-weight: 600;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
